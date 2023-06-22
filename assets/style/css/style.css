@@ -95,7 +95,7 @@ body {
   font-weight: 700;
   background-color: #242742;
 }
-.main .container .primary-button:active {
+.main .container .primary-button:active, .main .container .primary-button:hover {
   background-color: #ff6257;
 }
 

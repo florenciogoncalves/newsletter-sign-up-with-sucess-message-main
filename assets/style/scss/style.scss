@@ -79,7 +79,7 @@ body {
 			font-weight: 700;
 
 			background-color: $dark-slate-rey;
-			&:active {
+			&:active, &:hover {
 				background-color: $tomato;
 			}
 		}
