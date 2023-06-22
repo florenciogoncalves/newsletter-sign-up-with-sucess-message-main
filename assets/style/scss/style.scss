@@ -1,0 +1,90 @@
+@import "colors";
+@import "fonts";
+
+html,
+body {
+	height: 100%;
+
+	background-color: $white;
+}
+
+.main {
+	background-color: $white;
+
+	.container {
+		margin-top: 2.25rem;
+
+		.list {
+			display: flex;
+			flex-direction: column;
+			list-style: none;
+			padding: 0;
+			gap: 0.75rem;
+			.item {
+				position: relative;
+				padding: 0 0 0 2.5rem;
+				&::before {
+					content: "";
+					position: absolute;
+					display: flex;
+					top: 0%;
+					transform: translateY(-0%);
+					left: 0;
+					width: 1.5rem;
+					height: 1.5rem;
+					background: url(../../images/icon-list.svg) no-repeat center;
+				}
+			}
+		}
+		.form {
+			margin-top: 2.5rem;
+			.label {
+				font-weight: 700;
+				* {
+					font-size: 0.85rem !important;
+				}
+			}
+			.input-email {
+				border: 1px solid $grey;
+				outline: none;
+				&:focus {
+					border-color: $dark-slate-rey;
+
+					color: $dark-slate-rey;
+				}
+				&::placeholder {
+					color: $grey;
+				}
+			}
+			.email-alert {
+				display: none;
+
+				color: $tomato;
+			}
+			&.wrong {
+				.email-alert {
+					display: block;
+				}
+        .input-email {
+          border-color: $tomato;
+
+          color: $tomato;
+
+          background-color: rgba($color: $tomato, $alpha: .2);
+        }
+			}
+		}
+		.primary-button {
+			color: $white;
+			font-weight: 700;
+
+			background-color: $dark-slate-rey;
+			&:active {
+				background-color: $tomato;
+			}
+		}
+	}
+}
+
+// Media-query
+@import "media_query.scss";

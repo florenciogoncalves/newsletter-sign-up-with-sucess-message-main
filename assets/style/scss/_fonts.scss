@@ -1,0 +1,28 @@
+@font-face {
+	font-family: "Roboto";
+	src: url(../../fonts/Roboto-Regular.ttf) format("ttf"),
+		url(../../fonts/Roboto-Bold.ttf) format("ttf");
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Roboto";
+	src: url(../../fonts/Roboto-Bold.ttf) format("ttf"),
+		url(../../fonts/Roboto-Regular.ttf) format("ttf");
+	font-weight: 700;
+}
+
+* {
+	font-size: 16px;
+	font-family: "Roboto", sans-serif;
+}
+
+.title {
+	font-weight: 700;
+	font-size: 2.25rem;
+	color: $dark-slate-rey;
+}
+.text {
+	font-weight: 400;
+	color: $charcoal-grey;
+}
