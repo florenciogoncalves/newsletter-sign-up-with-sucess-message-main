@@ -18,7 +18,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![alt="Screenshot-1"](./assets/images/screenshot-1.png)
+![alt="Screenshot-2"](./assets/images/screenshot-2.png)
 
 ### Links
 
